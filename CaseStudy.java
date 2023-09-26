@@ -47,4 +47,4 @@ public class Node {
 where "n" is the number of nodes in the tree. This is because each node is visited only once, 
 and the recursive operation stops when root == null. */
 
-/* d. I choose (a) because sorted array searches faster and takes up less computer memory
+/* d. I choose (a) because sorted array searches faster and takes up less computer memory */
