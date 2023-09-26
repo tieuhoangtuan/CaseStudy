@@ -1,15 +1,15 @@
 /* Algorithms Questions*/
 public class Node {
     public int key;
-    public Node data;
+    public Object data;
     public Node left;
     public Node right;
     
     public Node(Node node){
         this.key= node.key;
         this.data = node.data;
-        this.left = null;
-        this.right = null;
+        this.left = node.left;
+        this.right = node.right;
     }
 
     
@@ -18,7 +18,7 @@ public class Node {
     public static Objcet searchTree(Node root, int key) {
         while (root != null) {
             if(root.key == key){
-                return root.object;
+                return root.data;
             }
             if(root.key > key ){
                 root = root.left;
